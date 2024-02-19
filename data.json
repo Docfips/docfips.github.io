@@ -1,0 +1,11 @@
+{
+  "graph": [],
+  "links": [
+],
+  "nodes": [
+	{"sl":0, "size": 10, "score": 0.5, "id": "Life Progress Bar", "type":"circle"},
+	{"sl":1, "size": 10, "score": 0.5, "id": "Obsidian Commands", "type":"circle"}
+],
+  "directed": false,
+  "multigraph": false
+}
