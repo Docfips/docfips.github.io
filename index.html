@@ -1,120 +1,30 @@
-<script>
-  import Header from './Header.svelte';
-  import Main from './Main.svelte';
-  import Footer from './Footer.svelte';
-  import Sidebar from './Sidebar.svelte';
-</script>
-
-<div class="app">
-  <Sidebar />
-  <div class="main-content">
-    <Header />
-    <Main />
-    <Footer />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slattery Security</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <nav class="sidebar">
+      <h2>Navigation</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact Me</a></li>
+      </ul>
+    </nav>
+    <main class="main-content">
+      <header class="header">
+        <h1>Slattery Security</h1>
+      </header>
+      <section class="content">
+        <p>This is a place holder.</p>
+      </section>
+    </main>
   </div>
-</div>
-
-<style>
-  :global(body) {
-    background-color: black;
-    color: #000000;
-    font-family: "Fira Sans", sans-serif;
-  }
-
-  .app {
-    display: flex;
-    min-height: 100vh;
-  }
-
-  .main-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-  }
-</style>
-
-
-<div class="sidebar">
-  <h2>Navigation</h2>
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/resume">Resume</a></li>
-    <li><a href="/blog">Blog</a></li>
-  </ul>
-</div>
-
-<style>
-  .sidebar {
-    background-color: #44475a;
-    color: #f8f8f2;
-    width: 200px;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .sidebar a {
-    color: inherit;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    display: block;
-  }
-
-  .sidebar a:hover {
-    background-color: #383c4a;
-  }
-</style>
-
-
-<header class="header">
-  <h1>Slattery Security</h1>
-  <nav>
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/resume">Resume</a>
-  </nav>
-</header>
-
-<style>
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: #44475a;
-    color: #f8f8f2;
-  }
-</style>
-
-<main class="main">
-  <p>This is a place holder.</p>
-</main>
-
-<style>
-  .main {
-    flex: 1;
-    padding: 1rem;
-    color: #f8f8f2;
-  }
-</style>
-
-
-<footer class="footer">
-  <p>Copyright Slattery Security &copy; 2024 My Website</p>
-</footer>
-
-<style>
-  .footer {
-    padding: 1rem;
-    text-align: center;
-    background-color: #44475a;
-    color: #f8f8f2;
-  }
-</style>
+</body>
+</html>
